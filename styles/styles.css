@@ -71,6 +71,20 @@ main{
     transform: scale(1.05);
 }
 
+#tablas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.tableDiv{
+    border-radius: .5rem;
+    background-color: rgba(24, 119, 207, 0.185);
+    border: solid 1px rgba(24, 119, 207, 0.295);
+    padding: .75rem;
+}
+
 footer{
     background-color: rgba(0, 132, 255, 0.151);
     text-align: center;
