@@ -3,8 +3,9 @@ html{
         linear-gradient(to bottom right,
                         rgba(235, 185, 93, 0.219), 
                         rgba(0, 132, 255, 0.322));
-    height: 100%;
+    height: 100vh;
     font-family:  Helvetica, sans-serif;
+    background-attachment: fixed;
 }
 
 header{
@@ -12,14 +13,17 @@ header{
     color: rgba(0, 0, 0, 0.699);
     background-color: rgba(235, 185, 93, 0.150);
     border-bottom: solid 1px  rgba(0, 0, 0, 0.247);
-    
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -44,8 +48,9 @@ main{
     gap: 1rem;
 }
 
-.exerciseButton{
-    min-width: 6rem;
+.button{
+    width: 8rem;
+    min-width: 8rem;
     aspect-ratio: 16 / 9;
     background-color: rgba(24, 119, 207, 0.075);
     border: solid 1px rgba(24, 119, 207, 0.295);
@@ -53,7 +58,7 @@ main{
     transition: transform 0.2s ease;
 }
 
-.exerciseButton:hover{
+.button:hover{
     transform: scale(1.05);
 }
 
@@ -61,4 +66,9 @@ footer{
     background-color: rgba(0, 132, 255, 0.151);
     text-align: center;
     border-top: solid 1px  rgba(0, 0, 0, 0.247);
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
