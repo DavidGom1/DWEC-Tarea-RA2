@@ -1,6 +1,5 @@
 window.onload = function() {
     let name = prompt("Hola, podrias decirnos tu nombre?");
-    console.log(name)
     while(name === null || name.trim() === ""){
         name = prompt("Tu nombre no puede estar vacío, tu nombre?");
     }
