@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DWEC - Tarea 2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <h1>DWEC - Tarea 2</h1>
     </header>
     <main>
-
-        <button onclick="window.location.href='ejercicio1.html'">Ejercicio 1</button>
-        <p>Crea un documento html que solicite un nombre, la edad y escriba en el documento el mensaje: "Hola ____, tienes ____ años, eres ---(mayor/menor) de edad.</p>
+        <div class="listExercises">
+                <label onclick="window.location.href='ejercicio1.html'" class="exerciseLabel">
+                    <button title="Ver ejercicio 1" class="exerciseButton">Ejercicio 1</button>
+                    <p class="PButton">Crea un documento html que solicite un nombre, la edad y escriba en el documento el mensaje: "Hola ____, tienes ____ años, eres ---(mayor/menor) de edad.</p>
+                </label>
+                <label onclick="window.location.href='ejercicio2.html'" class="exerciseLabel">
+                    <button title="Ver ejercicio 1" class="exerciseButton">Ejercicio 2</button>
+                    <p class="PButton">Crea un documento html que solicite al usuario tres números por separado, y se escriba en el documento cual de los números introducidos es menor.</p>
+                </label>
+                <label onclick="window.location.href='ejercicio3.html'" class="exerciseLabel">
+                    <button title="Ver ejercicio 1" class="exerciseButton">Ejercicio 3</button>
+                    <p class="PButton">Crea un documento html que solicite al usuario un número y se escriba en el documento la suma de los números del 1 al número introducido (por ejemplo si introduce un 4, escribirá en el documento "La suma de los números del 1 al 4 es 10"). Comprueba previamente que han introducido un número y no una letra, para ello investiga el uso de la función isNaN, y muestra un error en este caso.</p>
+                </label>
+                <label onclick="window.location.href='ejercicio4.html'" class="exerciseLabel">
+                    <button title="Ver ejercicio 1" class="exerciseButton">Ejercicio 4</button>
+                    <p class="PButton">Escribe un documento html que permita ir introduciendo una serie indeterminada de números mientras su suma no supere 100. Cuando esto ocurra, se debe mostrar el total acumulado y el contador de cuantos números se han introducido</p>
+                </label>
+                <label onclick="window.location.href='ejercicio5.html'" class="exerciseLabel">
+                    <button title="Ver ejercicio 1" class="exerciseButton">Ejercicio 5</button>
+                    <p class="PButton">Crea un documento html que solicite al usuario un número N y escriba en el documento N tablas de multiplicar, de los n primeros números (por ejemplo si introducen el 6, mostraremos las tablas del 1, 2, 3, 4, 5, y 6)</p>
+                </label>
+        </div>
     </main>
+    <footer>
+        <p>By: David Gómez Lozano</p>
+    </footer>
 </body>
 </html>

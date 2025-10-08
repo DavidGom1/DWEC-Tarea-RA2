@@ -1,0 +1,64 @@
+html{
+    background-image: 
+        linear-gradient(to bottom right,
+                        rgba(235, 185, 93, 0.219), 
+                        rgba(0, 132, 255, 0.322));
+    height: 100%;
+    font-family:  Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(235, 185, 93, 0.150);
+    border-bottom: solid 1px  rgba(0, 0, 0, 0.247);
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 850px;
+    flex: 1;
+    padding: 2rem 5rem 0 5rem;
+}
+
+.listExercises{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.exerciseLabel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exerciseButton{
+    min-width: 6rem;
+    aspect-ratio: 16 / 9;
+    background-color: rgba(24, 119, 207, 0.075);
+    border: solid 1px rgba(24, 119, 207, 0.295);
+    border-radius: .75rem;
+    transition: transform 0.2s ease;
+}
+
+.exerciseButton:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: rgba(0, 132, 255, 0.151);
+    text-align: center;
+    border-top: solid 1px  rgba(0, 0, 0, 0.247);
+}
